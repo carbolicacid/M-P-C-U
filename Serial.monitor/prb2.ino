@@ -29,4 +29,5 @@ int mini(int a, int b, int c) {
   } else {
     int mini = c;
   }
+  return mini;
 }
