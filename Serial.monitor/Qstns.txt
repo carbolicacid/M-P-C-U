@@ -1,0 +1,45 @@
+1. Take User input Radius (r) as Float data. Write a program to calculate the area of the circle.
+2. Take 3 numbers as User Inputs (data type INT). Write a program to find out the minimum
+among these 3 numbers.
+3. Consider an array of 4 elements (initialize inputs in the code). Write a program that
+calculates the average of these 4 numbers.
+4. Take 2 inputs (integer) from user. Then ask user what arithmetic operation they want to do
+with these number (take as a String Input). Then show the output result.
+
+Frist Input: 3
+Second Input: 2
+Operation: Add
+Output = 5
+First Input: 16
+Second Input: 4
+Operation: Division
+Output = 4
+First Input: 5
+Second Input: 7
+Operation: Multiplication
+Output = 35
+
+5. Take Student ID as a user input. From ID, you have to find out the relevant information
+such as Admission year, Term, Department and Roll No.
+
+Student ID: 190205123
+Admission Year: 2019
+Term: Fall
+Department: EEE
+Roll. No.: 123
+Student ID: 170107089
+Admission Year: 2017
+Term: Spring
+Department: IPE
+Roll. No.: 089
+
+6. Design a Binary Encoder (One-Hot encoded). It will take 4-digit binary input from user
+and show the equivalent decimal number. It will also check whether user is giving correct
+input or not.
+
+Input: 0100
+Output: 10 (D2)
+Input: 0010
+Output: 01 (D1)
+Input: 1001
+Output: Wrong
