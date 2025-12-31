@@ -1,0 +1,73 @@
+1. Consider that last digit of your Student ID is “x”. Connect two LEDs of different color at
+digital pin “x” and “9 - x”. Write a code so that they blink in the following direction
+indefinitely –
+
+Time LED 1 (at Dpin x) LED 2 (at Dpin 9-x)
+0 – 1 s ON OFF
+1 – 2 s OFF OFF
+2 – 3 s OFF ON
+3 – 4 s OFF OFF
+4 – 5 s ON ON
+5 – 6 s OFF OFF
+
+2. Consider 2 LEDs of different colors are connected to two digital pins. Take two integer
+numbers (A & B) as user inputs. Now depending on the number following situation will
+occur –
+
+Input Number LED 1 LED 2
+A is Divisible by B ON OFF
+Otherwise OFF ON
+
+3. Design a priority encoder (D3 > D2 > D1 > D0). Take a 4-digit user input (valid binary
+combination). Then show the output using two LEDS. Print the word “INVALID” if any
+user gives 0000 as Input.
+
+User Input LED 1 LED 0
+1111 ON ON
+0010 OFF ON
+0101 ON OFF
+0001 OFF OFF
+
+4. Take two integer inputs from user. After that take a String input from User. Depending on
+the string input, perform the relevant arithmetic operation using the two input numbers. If
+a user gives wrong string name for arithmetic operation, it would be indicated by turning
+on a LED. For valid string inputs LED would be off.
+String Operation
+
+Add or + A + B
+Subtract or - A - B
+Multiply or * A * B
+Division or / A / B
+Modulus or % A % B
+Other LED would be ON
+
+5. Consider we would take an integer input (n) from user. Now write a custom function so
+that LED would blink n! (Factorial) times. However, if n! > 50, it would discard the input
+and prompt the user to give another input.
+
+Input Value, n = 3 (LED Would Blink 3! = 6 times)
+Input Value, n = 4 (LED Would blink 4! = 24 times)
+Input Value, n = 5 (as 5! = 120 > 50, it would prompt user to give
+
+another input instead of blinking)
+
+6. Take a 3 Digit Integer Input from a User (A = A3A2A1). Consider we have two LEDs
+connected with Arduino board. Now depending on the user input following events would
+take place –
+
+Situation LED 1 LED 2
+A3 > A1 Blink A2 Times OFF
+A3 < A1 OFF Blink A2 Times
+A3 = A1 OFF OFF
+
+7. Write a custom function that would take 3 inputs from user. First input would indicate no.
+of blinks, second input would indicate ON time in second and the third input would mean
+the duty cycle in percentage.
+
+Custom Function Format: blinkLED (a, b, c)
+
+Example – blinkLED (3, 2, 60)
+
+a = 3; // LED would blink 3 times
+b = 2; // LED would be ON for 2 second
+c = 40; // 40% ON time (Duty Cycle), so LED would be OFF for 60% (= 3s)
