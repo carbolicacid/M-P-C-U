@@ -1,0 +1,43 @@
+1. Design the following basic gates –
+
+No. Basic Gate
+1 AND
+2 OR
+3 NAND
+4 NOR
+5 XOR
+6 XNOR
+
+Take two Slide-switches as two inputs for the gate and use an LED to indicate the gate
+output.
+2. Consider 2 Push-buttons (One with Internal Pullup and other with External Pulldown
+resistor) and 4 LEDs of different colors. Write a code so that following conditions occur
+based on which switches are pressed or not –
+
+Push Button 1 LED 1 (R) LED 2 (G)
+Pressed ON OFF
+Not Pressed OFF ON
+Push Button 2 LED 3 (B) LED 4 (Y)
+Pressed ON OFF
+Not Pressed OFF ON
+
+3. Consider a setup with 3 slide switches and a single LED. Write a code so that LED is turned
+on when –
+
+No. of “ON” Switches > No. of “OFF” Switches
+
+4. Design a Full Adder and Full Subtractor. Take inputs using three slide switches. Outputs
+would be indicated by 2 LEDs. [*** Use Switch..Case ***]
+
+5. Implement the following function using three slide-switches and one LED for to indicate
+output –
+
+f = ∑ m (0, 2, 6, 7)
+
+6. Consider a setup with 3 push-buttons (External Pulldown, External Pullup and Internal
+Pullup) and a single LED. Write a code so that LED is turned on when odd number of push
+button are pressed.
+
+7. Design a 2 to 1 MUX using two slide switches, one push button and a LED. Two slide
+switches would be used to indicate input values (I1 & I0). Push button would be used as
+selector (S). Output would be indicated by the LED (Y).
