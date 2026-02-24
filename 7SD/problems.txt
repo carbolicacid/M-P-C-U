@@ -1,0 +1,38 @@
+1. Find the Common Cathode code for all Hexadecimal Numbers (0 – F) where "a" is MSB
+and "p" is LSB. Show 0 to F one by one. Keep Pin Array Unchanged (a, b, ...., g, p)
+2. Take an input from user using serial monitor. After that show all the numbers that are
+multiple of user inputs in the range of Є [0, F]. After showing all multiples turn off the
+display.
+
+If user input = 3
+Show → 3, 6, 9, C, F (then Turn OFF)
+
+If user input = 7
+Show → 7, E (then Turn OFF)
+
+3. Take a number from user. If the number is Odd then show "O", otherwise if the number is
+even show "E".
+4. Take a number from user. If the number is Positive then show "P", if the number is Negative
+then show "n", otherwise show "0".
+5. Take two numbers (A & B) from user. If A is divisible by B then show "y", otherwise show
+"n".
+
+2 of 2 | P a g e
+
+4 × 7SD
+
+6. Show following words in 4×7SD.
+
+Word Pattern
+
+Disc
+
+Play
+
+Open
+
+Stop
+
+Cold
+
+7. Show 4-digit Hexadecimal numbers using Division and Modulus operators.
