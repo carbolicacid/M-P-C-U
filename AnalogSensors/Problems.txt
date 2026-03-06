@@ -1,0 +1,14 @@
+Analog Read
+1. Connect a potentiometer and an LED. Read the potentiometer value and if the value is
+greater than 512, turn the LED ON; otherwise, turn it OFF.
+2. Connect a potentiometer. Read its value from 0V to 5V and map it to a percentage from
+0% to 100%. Print to the Serial Monitor in the format – Potentiometer: 75%
+3. Connect two potentiometers. Read both values and print which potentiometer has the
+higher value.
+
+Analog Write
+4. Connect two LEDs and a potentiometer. Set LED1 brightness proportional to the
+potentiometer voltage reading and LED2 brightness inversely proportional to the
+potentiometer voltage reading.
+5. Connect an LED and a potentiometer. Read the potentiometer and map the value to a delay
+range from 100 ms to 1000 ms. Blink the LED at the mapped speed.
