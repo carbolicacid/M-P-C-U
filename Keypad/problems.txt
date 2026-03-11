@@ -1,0 +1,111 @@
+1. Write a code such that at first it would take no. of digits as input from keypad. After that
+take input from user through keypad. Show whether the given input is EVEN number or
+ODD number by printing in LCD.
+
+Number of Digit: 3 (From Keypad)
+Input: 123 (From Keypad) [3-digit Input]
+Result: ODD (Print in LCD)
+Number of Digit: 2 (From Keypad)
+Input: 46 (From Keypad) [2-digit Input]
+Result: EVEN (Print in LCD)
+
+2. Take two single digit input from keypad as user Input (x & y). Then depending on the
+following conditions perform operation and show the result in the serial monitor.
+
+Key Operation
+A x + y
+B x - y
+C x × y
+D x / y
+# x % y
+* x
+y
+
+2 of 4 | P a g e
+3. First take a 4-digit password from user using Serial Monitor. Then take 4-digit password
+from keypad. If both of the password matches turn on a Green LED, otherwise a Red LED
+would be turned on indicating wrong input.
+
+Actual Password: 5478 (From Serial Monitor)
+
+Input Password: 1234 (From Keypad)
+
+➔ RED LED would be ON (As password is incorrect)
+
+Input Password: 5478 (From Keypad)
+
+➔ GREEN LED would be ON (As password is correct)
+
+4. Take a multi-digit number as an input using serial monitor. After that take 4 single-digit
+numbers from keypad. Consider you have two (2) LEDs (LED1 & LED0) attached to your
+Arduino along with your keypad. Now LEDs would indicate how many single digit
+numbers are factors of multi-digit number. If all of these 4 numbers are factors then both
+LED would blink.
+
+Example
+Multi-Digit Input: 35 (From Serial Monitor)
+Single Digit Inputs: 2 5 7 9 (Using Keypad)
+LED1 → ON LED0 → OFF (0b10 = 2) [As 5 & 7 are factors of 35]
+Multi-Digit Input: 5 (From Serial Monitor)
+Single Digit Inputs: 2 3 4 5 (Using Keypad)
+LED1 → OFF LED0 → ON (0b01 = 1) [As only 5 is factor of 5]
+Multi-Digit Input: 20 (From Serial Monitor)
+Single Digit Inputs: 1 2 4 5 (Using Keypad)
+Both LED1 & LED0 would blink [As all four numbers are factors of 20]
+
+3 of 4 | P a g e
+5. Write a custom (user defined) function which would take two inputs and a character which
+would indicate the logical operation to be performed using these tow input numbers. User
+would give input in following order –
+
+customFunction (Number1, Logical Operation, Number2)
+Operator Key Operation
+A Bitwise AND
+B Bitwise OR
+C Bitwise NOR
+D Bitwise NAND
+* Bitwise XOR
+
+Example
+• customFunction (1, 'A', 2)
+Number 1: 2 (Binary – 10)
+Logical Operation: A (Bitwise AND)
+Number 2: 1 (Binary – 01)
+Result: 0 (Binary – 00)
+
+• customFunction (2, 'B', 0)
+Number 1: 2 (Binary – 10)
+Logical Operation: B (Bitwise OR)
+Number 2: 0 (Binary – 00)
+Result: 2 (Binary – 10)
+
+• customFunction (2, '*', 1)
+Number 1: 2 (Binary – 10)
+Logical Operation: * (Bitwise XOR)
+Number 2: 1 (Binary – 01)
+Result: 3 (Binary – 11)
+
+4 of 4 | P a g e
+6. Generate a Random 2-digit Integer number from 00 – 99 [ Hint: use random() function].
+Now, you have to guess the number. At first, take an integer input (n) from Serial monitor
+which would indicate the maximum number of guesses you are allowed to take. Take input
+of the numbers you would guess through keypad (All guessed numbers would be 2-digit
+number). If you can correctly guess the number by n tries, a GREEN LED would be turned
+on to indicate your successful guess. On the other hand, if you fail to guess the number by
+n tries an RED LED would be turned on to indicate that you failed. Print all input numbers
+at the Top Line of LCD Monitor. Also print "Wrong" or "Correct" in the LCD Monitor
+after evaluating every guesses at the Bottom Line.
+
+Example
+Random Number: 97
+No. of Allowed Guesses: 2 (Serial Monitor Input)
+Guess 1: 15 (Keypad Input) → Wrong (LCD Monitor)
+Guess 2: 03 (Keypad Input) → Wrong (LCD Monitor)
+RED LED would be ON; [As you have failed to guess correctly by 2 tries]
+
+Random Number: 23
+No. of Allowed Guesses: 4 (Serial Monitor Input)
+Guess 1: 01 (Keypad Input) → Wrong (LCD Monitor)
+Guess 2: 32 (Keypad Input) → Wrong (LCD Monitor)
+Guess 3: 23 (Keypad Input) → Correct (LCD Monitor)
+GREEN LED would be ON; [As you have guessed correctly by 4 tries]
